@@ -54,13 +54,9 @@
           <h1 class="socialtitle">
             &nbsp;&nbsp;&nbsp;Find Me On:&nbsp;&nbsp;&nbsp;
           </h1>
-          <img
-            v-for="site in socialsites"
-            :key="site.id"
-            :src="site.logo"
-            width="40px"
-            style="margin:10px"
-          />
+          <a target="_blank" v-for="site in socialsites" :key="site.id" :href="site.link">
+            <img :src="site.logo" width="40px" style="margin:10px" />
+          </a>
         </div>
       </div>
     </v-container>
@@ -106,31 +102,37 @@ export default {
           id: 0,
           name: "facebook",
           logo: "https://image.flaticon.com/icons/svg/174/174848.svg",
-          link: "",
+          link: "https://www.facebook.com/varad.patil.526",
         },
         {
           id: 1,
           name: "twitter",
           logo: "https://image.flaticon.com/icons/svg/174/174876.svg",
-          link: "",
+          link: "https://twitter.com/VaradPa60067729",
         },
         {
           id: 2,
           name: "github",
           logo: "https://cdn.worldvectorlogo.com/logos/github-1.svg",
-          link: "",
+          link: "https://github.com/varadp2000",
         },
         {
           id: 3,
           name: "linkedin",
           logo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
-          link: "",
+          link: "https://www.linkedin.com/in/varad-patil-0a3b4b169/",
         },
         {
           id: 4,
           name: "instagram",
           logo: "https://cdn.worldvectorlogo.com/logos/instagram-2016.svg",
-          link: "",
+          link: "https://instagram.com/varad.r.p",
+        },
+        {
+          id: 5,
+          name: "whatsapp",
+          logo: "https://cdn.worldvectorlogo.com/logos/whatsapp-symbol.svg",
+          link: "https://wa.me/919370958807",
         },
       ],
       dialog: false,

@@ -14,9 +14,9 @@
               :key="item.id"
               @click=""
             >
-              <v-list-item-avtar>
+              <v-list-item-avatar>
                 <img :src="item.icon" width="30" style="margin-right:10px" />
-              </v-list-item-avtar>
+              </v-list-item-avatar>
               <v-list-item-content>
                 <v-list-item-title style="font-size:30px">{{
                   item.name
