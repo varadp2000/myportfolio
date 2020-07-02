@@ -74,6 +74,29 @@
         <v-col>
           <v-list>
             <v-subheader style="font-size:50px;font-weight:bold">
+              Languages
+            </v-subheader>
+            <v-divider style="margin-top:20px;margin-bottom:20px" />
+            <v-list-item
+              class="listitem"
+              v-for="item in languages"
+              :key="item.id"
+              @click=""
+            >
+              <v-list-item-avtar>
+                <img :src="item.icon" width="30" style="margin-right:10px" />
+              </v-list-item-avtar>
+              <v-list-item-content>
+                <v-list-item-title style="font-size:30px">{{
+                  item.name
+                }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-col>
+        <v-col>
+          <v-list>
+            <v-subheader style="font-size:50px;font-weight:bold">
               Server
             </v-subheader>
             <v-divider style="margin-top:20px;margin-bottom:20px" />
@@ -266,6 +289,48 @@ export default {
           name: "Android Studio",
           icon:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/1200px-Android_Studio_icon.svg.png",
+        },
+      ],
+      languages: [
+        {
+          id: 0,
+          name: "JAVA",
+          icon: "https://cdn.worldvectorlogo.com/logos/java-14.svg",
+        },
+        {
+          id: 1,
+          name: "C",
+          icon: "https://cdn.worldvectorlogo.com/logos/c-2975.svg",
+        },
+        {
+          id: 2,
+          name: "C++",
+          icon: "https://cdn.worldvectorlogo.com/logos/c.svg",
+        },
+        {
+          id: 3,
+          name: "Dart",
+          icon: "https://cdn.worldvectorlogo.com/logos/dart.svg",
+        },
+        {
+          id: 4,
+          name: "Python",
+          icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+        },
+        {
+          id: 5,
+          name: "JavaScript",
+          icon: "https://cdn.worldvectorlogo.com/logos/javascript.svg",
+        },
+        {
+          id: 6,
+          name: "TypeScript",
+          icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+        },
+        {
+          id: 7,
+          name: "PHP",
+          icon: "https://cdn.worldvectorlogo.com/logos/php.svg",
         },
       ],
     };

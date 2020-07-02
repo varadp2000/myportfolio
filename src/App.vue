@@ -15,12 +15,12 @@
       <div id="skills" class="maindiv" style="padding-top:20vh">
         <skills />
       </div>
-      <div id="portfolio" class="maindiv" style="padding-top:20vh">
+      <div id="portfolio" class="maindiv" style="padding-top:20vh;padding-bottom:20vh">
         <portfolio />
       </div>
       <div id="contact" class="maindiv" style="">
-        <v-img src="./assets/contact.jpg">
-        <contact />
+        <v-img style="height:95vh" src="./assets/contact.jpg">
+          <contact />
         </v-img>
       </div>
     </v-content>
@@ -55,11 +55,6 @@ export default {
 </script>
 <style scoped>
 .maindiv {
-  height: 95vh;
-}
-@media only screen and (max-width: 1000px) {
-  .maindiv {
-    height: auto;
-  }
+  height: auto;
 }
 </style>
