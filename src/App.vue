@@ -19,7 +19,7 @@
         <portfolio />
       </div>
       <div id="contact" class="maindiv" style="">
-        <v-img style="height:95vh" src="./assets/contact.jpg">
+        <v-img style="height:auto" src="./assets/contact.jpg">
           <contact />
         </v-img>
       </div>
