@@ -78,6 +78,12 @@ export default {
           link: "https://github.com/varadp2000/mangoo-web",
           color: "red",
         },
+        {
+          id: 4,
+          name: "Drailnet",
+          link: "http://drailnet.com",
+          color: "#16A7E5",
+        },
       ],
     };
   },

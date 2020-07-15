@@ -15,7 +15,11 @@
       <div id="skills" class="maindiv" style="padding-top:20vh">
         <skills />
       </div>
-      <div id="portfolio" class="maindiv" style="padding-top:20vh;padding-bottom:20vh">
+      <div
+        id="portfolio"
+        class="maindiv"
+        style="padding-top:20vh;padding-bottom:20vh"
+      >
         <portfolio />
       </div>
       <div id="contact" class="maindiv" style="">
